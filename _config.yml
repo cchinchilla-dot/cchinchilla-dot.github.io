@@ -1,0 +1,62 @@
+### Site Settings ###
+title               : Carlos Chinchilla Corbacho
+description         : >-
+                      Machine Learning Engineer & PhD Student.
+                      Professional Scrum Master™ (PSM-I).
+                      Creando magia con IA, IoT y tecnologías revolucionarias.
+baseurl             : ""
+remote_theme        : yousinix/portfolYOU
+open_new_tab        : true
+
+### Plugins ###
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+### Author Info ###
+author:
+  name              : Carlos Chinchilla Corbacho
+  image             : https://lh3.googleusercontent.com/d/1fVa7L2KAsr0_BgKXuqORicxPeNR19y-M
+  email             : cchinchillacorbacho@icloud.com
+  github            : cchinchilla-dot
+# gitlab            : your_username
+# kaggle            : your_username
+  linkedin          : cchinchilla
+# medium            : your_username
+
+### Posts ###
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
